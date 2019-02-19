@@ -10,8 +10,7 @@ namespace Business_Plan.Models
         public int Id { get; set; }
 
         //fk
-        public List<ProductDto> Product { get; set; }
-        public List<ProdutBasicsUnitCostsDto> UnitInfo { get; set; }
+        public ProductDto Product { get; set; }
 
         public string Month { get; set; }
         public double PurchasesRandsNoVat { get; set; }

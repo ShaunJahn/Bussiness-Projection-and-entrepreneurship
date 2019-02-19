@@ -14,19 +14,16 @@ namespace Business_Plan.Controllers
     {
         public IActionResult Index()
         {
-            var DashBoard = new DashboardViewModel()
+            var userInfo = new DashboardViewModel()
             {
-                ProductDashBoardView = new ProductDashBoardViewModel()
+                userInformation = new UserInformation()
                 {
-                    ProductName = "Name Here",
-                    Stock = TempDto.StockList,
-                    FOBCalculation = TempDto.SingleFob,
-                    ProdutBasicsUnitCosts = TempDto.ProdutBasicsUnitCosts,
-                    TotalCostOfProcust = TempDto.TotalCostOfProduct
+                    Name = TempDto.Name,
+                    Surname = TempDto.Surname,
+                    CompanyName = TempDto.CompanyName
                 }
             };
-
-            return View();
+            return View(userInfo);
         }
     }
 }

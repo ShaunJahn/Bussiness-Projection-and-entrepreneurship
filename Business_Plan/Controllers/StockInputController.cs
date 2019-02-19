@@ -17,10 +17,12 @@ namespace Business_Plan.Controllers
         }
 
         [HttpPost]
-        public IActionResult getStock(InputStockViewModel inputStock)
+        public IActionResult GetStock(InputStockViewModel inputStock)
         {
-            TempDto.StockList.Append(inputStock.Stock);
-            return RedirectToAction("index");
+
+            for (int k = 0; k < 5; k++)
+                TempDto.StockList.Append(inputStock.Stock);
+            return RedirectToAction("index", "Build");
         }
     }
 }

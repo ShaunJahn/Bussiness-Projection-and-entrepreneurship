@@ -19,10 +19,10 @@ namespace Business_Plan.Controllers
         }
 
         [HttpPost]
-        public IActionResult getInputFob(InputFobViewModel inputFob)
+        public IActionResult GetInputFob(InputFobViewModel inputFob)
         {
             TempDto.SingleFob = inputFob.FOBDto;
-            return RedirectToAction("index");
+            return RedirectToAction("index", "StockInput");
         }
     }
 }

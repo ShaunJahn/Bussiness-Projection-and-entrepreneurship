@@ -1,0 +1,9 @@
+﻿@model InputStockViewModel
+
+<form asp-controller="StockInput" asp-action="GetStock" method="post">
+    <h1>How many do you want to buy?</h1>
+    <input asp-for="Stock.UnitPurshases" />
+    <h1>How many do you think you can sell in a month?</h1>
+    <input asp-for="Stock.UnitSales" />
+    <button type="submit">Save</button>
+</form>

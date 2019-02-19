@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,7 +10,9 @@ namespace Business_Plan.Models
     {
         public int Id { get; set; }
         //fk
-        public List<ProductDto> Product { get; set; }
+
+        public ProductDto Product { get; set; }
+
         public string Month { get; set; }
         public int UnitOpeningStock { get; set; }
         public int UnitPurshases { get; set; } //user input
@@ -17,5 +20,6 @@ namespace Business_Plan.Models
         public int UnitClosingStock { get; set; }
         public int WeeksForward { get; set; }
         public int OverUnderStock { get; set; }
+
     }
 }
