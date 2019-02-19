@@ -1,7 +1,19 @@
-﻿@model DashboardViewModel
+﻿@model InputFobViewModel
 
 <p>Displaying stock</p>
+<form asp-action="getInputFob" method="post">
+    <h1>What is the FOB</h1>
+    <input asp-for="FOBDto.FobOfProduct" />
 
-<h1>How many units to start with</h1>
-<input asp-for=""
+    <h1>What is the Shipping Costs</h1>
+    <input asp-for="FOBDto.ShippingCost" />
+
+    <h1>What is the Duty</h1>
+    <input asp-for="FOBDto.Duty" />
+
+    <h1>What is the Application Fee</h1>
+    <input asp-for="FOBDto.ApplicationFee" />
+    <button type="submit">Add</button>
+</form>
+
 

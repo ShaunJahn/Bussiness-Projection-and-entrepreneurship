@@ -8,5 +8,6 @@ namespace Business_Plan.ViewModels
     public class DashboardViewModel
     {
         public ProductDashBoardViewModel ProductDashBoardView { get; set; }
+        public UserInformation userInformation { get; set; }
     }
 }

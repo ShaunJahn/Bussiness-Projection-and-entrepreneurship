@@ -10,7 +10,6 @@ namespace Business_Plan.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         //fk
-        [ForeignKey("Product")]
-        public ProductDto ProductID { get; set; }
+        //  public ProductDto ProductID { get; set; }
     }
 }

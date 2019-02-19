@@ -1,7 +1,12 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-}
+﻿@model DummyLoginViewModel
 
-<h1>Index</h1>
-
+<h1>Dummy data</h1>
+<form asp-action="InputDetails" asp-controller="Home" method="post">
+    <h1>Name</h1>
+    <input asp-for="Name" />
+    <h1>Surname</h1>
+    <input asp-for="Surname" />
+    <h1>Company Name</h1>
+    <input asp-for="CompanyName" />
+    <button type="submit">Send</button>
+</form>

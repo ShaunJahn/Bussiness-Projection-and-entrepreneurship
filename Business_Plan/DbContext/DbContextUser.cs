@@ -18,6 +18,7 @@ namespace Business_Plan.DbContext
         public DbSet<FOBDto> FOBs { get; set; }
         public DbSet<StockDto> Stocks { get; set; }
         public DbSet<ProdutBasicsUnitCostsDto> ProdutBasicsUnitCosts { get; set; }
+        public DbSet<TotalCostOfProductDto> totalCostOfProducts { get; set; }
 
     }
 }
